@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}CGF Escavações{% endblock %}</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body id="bem-vindo" class="bg-gray-100">
+    {% include '_navbar.html' %}
+
+    <main>
+        {% block content %}
+        
+        {% endblock content %}
+    </main>
+    
+    {% include '_footer.html' %}
+
+    {% block extra_scripts %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="min-h-screen text-gray-800">
+  <div class="flex flex-col items-center justify-center text-center py-15">
+    <h1 class="text-4xl md:text-6xl font-bold mb-6">Bem-vindo à CGF Escavações</h1>
+  </div>
+
+  <!-- Hero Section -->
+<div class="max-w-6xl mx-auto px-6">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    
+    <!-- Texto -->
+    <div class="text-center md:text-left">
+      <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
+        Somos especialistas em <strong>terraplanagem, escavações, fundações e movimentação de solo</strong>, oferecendo soluções completas para obras civis, industriais e residenciais.
+        <br><br>
+        Com uma equipe altamente qualificada e equipamentos modernos, garantimos <strong>precisão, segurança e eficiência</strong> em cada etapa do projeto.
+        Nosso compromisso é transformar terrenos brutos em bases sólidas, prontas para receber qualquer tipo de construção — sempre com <strong>responsabilidade ambiental</strong> e alto padrão de qualidade.
+      </p>
+    </div>
+
+    <!-- Imagem -->
+    <div class="flex justify-center md:pl-6">
+      <img src="{% static 'imagem.jpg' %}" alt="Máquinas em operação"
+           class="w-full max-w-md rounded-xl shadow-lg object-cover">
+    </div>
+
+  </div>
+
+  <!-- Botão -->
+  <div class="text-center mt-12">
+    <a href="#servicos"
+       class="inline-block bg-blue-600 text-white text-lg px-8 py-3 rounded-lg hover:bg-blue-700 transition duration-300 shadow-md">
+       Saiba mais
+    </a>
+  </div>
+</div>
+
+
+  <!-- Seção de Serviços -->
+  <section id="servicos" class="py-20 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Nossos Serviços</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow text-center">
+          <div class="text-blue-600 text-5xl mb-4">⛏️</div>
+          <h3 class="text-xl font-semibold mb-2">Escavações</h3>
+          <p>Trabalhos de escavação com precisão para construção civil e infraestrutura.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow text-center">
+          <div class="text-blue-600 text-5xl mb-4">🏗️</div>
+          <h3 class="text-xl font-semibold mb-2">Terraplanagem</h3>
+          <p>Nivelamento de terrenos para construções residenciais e industriais.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow text-center">
+          <div class="text-blue-600 text-5xl mb-4">🚜</div>
+          <h3 class="text-xl font-semibold mb-2">Máquinas Pesadas</h3>
+          <p>Aluguel e operação de máquinas para serviços de grande porte.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+</div>
+{% endblock content %}
