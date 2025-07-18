@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="min-h-screen bg-white text-gray-800 px-6 py-10">
+  <div class="text-center mb-12">
+    <h1 class="text-4xl md:text-5xl font-bold">Nossas Máquinas</h1>
+    <p class="text-lg mt-4 text-gray-600">Conheça algumas das máquinas que utilizamos para garantir qualidade e eficiência nos serviços</p>
+  </div>
+
+  <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10">
+    
+    <!-- Máquina 1 -->
+    <div class="bg-gray-100 p-6 rounded-xl shadow text-center flex flex-col items-center">
+      <img src="{% static "VIO17.png"%}" alt="Escavadeira Hidráulica" class="rounded-lg shadow-lg w-100 h-120 object-cover mb-4">
+      <h3 class="text-2xl font-bold mb-2">Vio 17</h3>
+      <p class="text-gray-700">Miniescavadeira compacta de 1,8 tonelada com 14,5 HP, chassi retrátil para acessos em locais apertados, profundidade de escavação ~2,3 m.</p>
+    </div>
+
+    <!-- Máquina 2 -->
+    <div class="bg-gray-100 p-6 rounded-xl shadow text-center flex flex-col items-center">
+      <img src="{% static "VIO20.avif" %}" alt="Trator de Esteira" class="rounded-lg shadow-lg w-100 h-120 object-cover mb-4">
+      <h3 class="text-2xl font-bold mb-2">Vio 20</h3>
+      <p class="text-gray-700"> Equipamento de médio com 2125 a 2225 kg, ideal para terraplanagem e obras de pequeno a médio porte.</p>
+    </div>
+
+    <!-- Máquina 3 -->
+    <div class="bg-gray-100 p-6 rounded-xl shadow text-center flex flex-col items-center">
+      <img src="#" alt="Retroescavadeira" class="rounded-lg shadow-lg w-full h-56 object-cover mb-4">
+      <h3 class="text-2xl font-bold mb-2">Vio 30.</h3>
+      <p class="text-gray-700">Miniescavadeira de 24 HP, alcance e potência balanceados para escavações médias.</p>
+    </div>
+
+    <!-- Máquina 4 -->
+    <div class="bg-gray-100 p-6 rounded-xl shadow text-center flex flex-col items-center">
+      <img src="#" alt="Caminhão Basculante" class="rounded-lg shadow-lg w-full h-56 object-cover mb-4">
+      <h3 class="text-2xl font-bold mb-2">Vio 55</h3>
+      <p class="text-gray-700">Máquina de 5,5 t e 47,6 HP, profundidade de escavação 4,1 m, giro zero, SmartAssist e quick coupler para alta produtividade.</p>
+    </div>
+
+  </div>
+</div>
+{% endblock content %}
