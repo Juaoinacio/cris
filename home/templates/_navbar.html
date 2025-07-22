@@ -1,4 +1,4 @@
-<nav class="bg-gradient-to-r from-slate-800 to-slate-900 shadow-lg sticky top-0 z-50">
+<nav class="bg-amber-500 shadow-lg sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
             <!-- Logo -->
@@ -8,13 +8,12 @@
                         <span class="text-white text-xl"></span>
                     </div>
                     <span class="text-xl font-bold">CGF Escavações</span>
-                    
                 </a>
             </div>
             <!-- Menu Desktop -->
             <div class="hidden md:block">
                 <div class="ml-10 flex items-baseline space-x-8">
-                    <a href="#" class="bg-orange-500 text-white px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:-translate-y-0.5">
+                    <a href="/" class="bg-orange-500 text-white px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:-translate-y-0.5">
                         Início
                     </a>
                     <a href="#" class="text-gray-200 hover:bg-white hover:bg-opacity-10 hover:text-orange-400 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:-translate-y-0.5">
@@ -23,8 +22,11 @@
                     <a href="https://api.whatsapp.com/send?phone=" class="text-gray-200 hover:bg-white hover:bg-opacity-10 hover:text-orange-400 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:-translate-y-0.5">
                         Contato
                     </a>
-                    <a href="#" class="text-gray-200 hover:bg-white hover:bg-opacity-10 hover:text-orange-400 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:-translate-y-0.5">
-                        Sobre
+                    <a href="{% url 'machine' %}" class="text-gray-200 hover:bg-white hover:bg-opacity-10 hover:text-orange-400 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:-translate-y-0.5">
+                        Máquinas
+                    </a>
+                     <a href="{% url 'service' %}" class="text-gray-200 hover:bg-white hover:bg-opacity-10 hover:text-orange-400 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:-translate-y-0.5">
+                        Serviços
                     </a>
                 </div>
             </div>
@@ -56,8 +58,8 @@
             <a href="#" class="text-gray-200 hover:bg-white hover:bg-opacity-10 hover:text-orange-400 block px-3 py-2 rounded-md text-base font-medium transition-all duration-300">
                 Contato
             </a>
-            <a href="#" class="text-gray-200 hover:bg-white hover:bg-opacity-10 hover:text-orange-400 block px-3 py-2 rounded-md text-base font-medium transition-all duration-300">
-                Sobre
+            <a href="{% url "machine" %}" class="text-gray-200 hover:bg-white hover:bg-opacity-10 hover:text-orange-400 block px-3 py-2 rounded-md text-base font-medium transition-all duration-300">
+                Maquinas
             </a>
         </div>
     </div>

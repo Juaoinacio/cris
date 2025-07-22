@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="min-h-screen text-gray-800">
+  <div class="col items-center flex flexter justify-center text-center py-10">
+    <h1 class="text-4xl md:text-6xl font-bold">Serviços Gerais</h1>
+  </div>
+
+  <!-- Terraplanagem -->
+  <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+    <div class="flex flex-col justify-center items-center bg-gray-200 rounded-lg p-10 text-center ml-10">
+      <h3 class="text-3xl font-bold mb-4 text-center">Terraplanagem</h3>
+      <p class="text-lg text-gray-700 text-center">
+        Realizamos serviços completos de terraplanagem com equipamentos modernos e equipe qualificada.
+        Garantimos nivelamento preciso, compactação adequada e preparação do solo para construções civis, industriais ou residenciais.
+      </p>
+    </div>
+
+    <div class="flex justify-center md:pl-6">
+      <img src="{% static 'Terraplanagem.jpg' %}" alt="Terraplanagem" class="w-full max-w-md rounded-xl h-100 w-100 shadow-lg object-cover">
+    </div>
+  </div>
+
+  <!-- Composteiras -->
+  <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8 py-10">
+    <div class="flex justify-center ite md:pr-6 order-1 md:order-none overflow-hidden rounded-xl">
+      <img src="{% static 'Composteiras.jpg' %}" alt="Composteiras"
+           class="w-full max-w-md w-100 h-100 rounded-xl shadow-lg object-cover">
+    </div>
+
+    <div class="flex flex-col justify-center items-center md:text-left bg-gray-200 rounded-lg p-10 mr-10">
+      <h3 class="text-3xl font-bold mb-4 text-center">Composteiras</h3>
+      <p class="text-lg text-gray-700 leading-relaxed text-center">
+        Desenvolvemos e instalamos composteiras eficientes para reaproveitamento de resíduos orgânicos,
+        promovendo práticas sustentáveis tanto no meio urbano quanto no rural.
+      </p>
+    </div>
+  </div>
+
+  <!-- Retirada de Intulho-->
+  <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+    <div class="flex flex-col justify-center items-center md:text-left bg-gray-200 rounded-lg p-10 ml-10">
+      <h3 class="text-3xl font-bold mb-4 text-center">Retirada de Entulhos</h3>
+      <p class="text-lg text-gray-700 leading-relaxed text-center">
+        Trabalhamos com fundações rasas e profundas, adaptadas às necessidades de cada terreno e projeto.
+        Utilizamos tecnologia de ponta para garantir a segurança e durabilidade da estrutura.
+      </p>
+    </div>
+    
+    <div class="flex justify-center md:pl-6">
+      <img src="{% static 'Intulho.jpg' %}" alt="Fundações"
+           class="w-full max-w-md rounded-xl h-100 w-100 shadow-lg object-cover">
+    </div>
+  </div>
+
+  <!-- Movimentação de Solo -->
+  <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8 py-10">
+    <div class="flex justify-center md:pr-6 order-1 md:order-none">
+      <img src="{% static 'MovimentacaoDeTerra.jpg' %}" alt="Movimentação de Solo"
+           class="w-full max-w-md rounded-xl h-100 w-100 shadow-lg object-cover">
+    </div>
+
+    <div class="flex flex-col justify-center items-center md:text-left bg-gray-200 rounded-lg p-10 mr-10">
+      <h3 class="text-3xl font-bold mb-4 text-center">Movimentação de Solo</h3>
+      <p class="text-lg text-gray-700 leading-relaxed text-center">
+        Executamos escavações, aterros e cortes de solo com segurança e planejamento técnico,
+        assegurando que cada projeto seja realizado com alta performance e respeito ao meio ambiente.
+      </p>
+    </div>
+  </div>
+
+  <!-- Meio Ambiente -->
+  <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8 py-10">
+    <div class="flex flex-col justify-center items-center md:text-left bg-gray-200 rounded-lg p-10 ml-10">
+      <h3 class="text-3xl font-bold mb-4 text-center">Meio Ambiente</h3>
+      <p class="text-lg text-gray-700 leading-relaxed text-center">
+        Todas as nossas atividades são conduzidas com foco na sustentabilidade, minimizando impactos ambientais
+        e promovendo ações ecológicas como manejo adequado de resíduos e proteção dos recursos naturais.
+      </p>
+    </div>
+
+    <div class="flex justify-center md:pl-6">
+      <img src="{% static 'Canaletas.jpg' %}" alt="Meio Ambiente" class="w-full w-100 h-100 max-w-md rounded-xl shadow-lg object-cover">
+    </div>
+  </div>
+{% endblock content %}
