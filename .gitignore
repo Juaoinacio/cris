@@ -87,3 +87,6 @@ local_settings.py
 
 .env
 .venv
+node_modules
+static/src/input.css
+static/src/output.css
